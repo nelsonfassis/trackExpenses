@@ -10,10 +10,6 @@ body {
   padding: 0px;
 }
 
-.main{
-    margin-top:50px;
-}
-
 .contact-text{
   font-size: 20px;
   padding: 20px 35px 20px 35px;
@@ -63,7 +59,8 @@ hr{
 }
 
 
-div .portifolio{
+
+div .goal{
   border: 2px;
   border-color: black;
   height: 100%;
@@ -72,7 +69,7 @@ div .portifolio{
   background: #aaa;
 }
 
-.portifolio .portifolio-picture{
+.goal .goal-picture{
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +79,7 @@ div .portifolio{
 }
 
 .intro{
-  background: #eee;
+  background: #b3b3b3;
   padding-top: 10px;
 }
 
@@ -107,18 +104,6 @@ font-family: 'Zilla Slab', serif;
   margin-left: auto;
   margin-right: auto;
 }
-
-div .intro-picture{
-margin-top: 25px;
-margin-bottom: 25px;
-position: relative;
-  }
-
-.intro-picture img{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-    }
 
 /*Navigation bar*/
 .logo-picture{
@@ -183,7 +168,6 @@ margin-right: auto;
 
 
 section, .footer-rights{
-  background: #aa9;
   text-align: center;
   font-size: 19px;
   padding-left: 15px;

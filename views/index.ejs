@@ -7,46 +7,49 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
 
-
-
   	    <% include templates/header.ejs %>
 
-
-  	<div class="container main">
+  	<div class="container">
   		<section class="intro" id="intro">
   			<div class="row">
-  				<div class="col-lg-7 col-md-6 col-sm-12 intro-text">
-            <h1><%= title %></h1>
-            <p>Welcome to <%= title %></p>
-  					<h2>Nelson Assis</h2>
-  					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
-  				</div>
-  				<div class="col-lg-5 col-md-6 col-sm-12 intro-picture">
-  					<img alt="Nelson Assis" class="intro-picture" src="https://goo.gl/enfbhY">
+  				<div class="col-lg-12 col-md-12 col-sm-12 intro-text">
+  					<% include templates/carousel.ejs %>
   				</div>
   			</div>
   		</section>
-
-  		<section class="portifolio" id="portifolio">
+    </div>
+    <div class="container">
+  		<section class="goal" id="goal">
   			<div class="row">
-  				<div class="col-lg-12 col-md-12 col-sm-12 portifolio">
-  					<h3>Portifolio</h3>
+  				<div class="col-lg-12 col-md-12 col-sm-12 goal">
+  					<h2>Goal</h2>
   					<hr> </hr>
-  						<img alt="Nelson Assis" class="portifolio-picture col-lg-4 col-md-6 col-sm-12" src="https://goo.gl/gJ65XG">
-  						<img alt="Nelson Assis" class="portifolio-picture col-lg-4 col-md-6 col-sm-12" src="https://goo.gl/WDHCkx">
-  						<img alt="Nelson Assis" class="portifolio-picture col-lg-4 col-md-6 col-sm-12" src="https://goo.gl/ySPJts">
-  						<img alt="Nelson Assis" class="portifolio-picture col-lg-4 col-md-6 col-sm-12" src="https://goo.gl/jpJwil">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <h2>Many people strugle to keep track of their income </h2>
+              <p>Track Expnses is the solution for you. Get closer to your finance and have a simple view of what you have, your incomming bills and spend your hard earned money wisely </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <h2>Many people strugle to keep track of their income </h2>
+              <p>Track Expnses is the solution for you. Get closer to your finance and have a simple view of what you have, your incomming bills and spend your hard earned money wisely </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <h2>Many people strugle to keep track of their income </h2>
+              <p>Track Expnses is the solution for you. Get closer to your finance and have a simple view of what you have, your incomming bills and spend your hard earned money wisely </p>
+            </div>
   				</div>
   			</div>
   			</section>
+      </div>
 
-
+      <div class="container">
   			<section class="contact" id="contact">
   				<div class="row">
   				<div class="col-lg-12 col-md-12 col-sm-12 contact">
@@ -74,8 +77,9 @@
   					</div>
 
   			</section>
+      </div>
 
-  		</div>
+      <div class="container">
   					<section class="footer" id="footer">
   				<div class="row">
   						<div class="col-lg-6 col-md-6 col-sm-12 footer">
