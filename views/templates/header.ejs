@@ -1,4 +1,4 @@
-
+<link rel='stylesheet' href='/stylesheets/login.css' />
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <a href="/">
@@ -9,6 +9,10 @@
       <li><a href="#intro">About</a></li>
       <li><a href="#goal">Goal</a></li>
       <li><a href="#contact">Contact</a></li>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+        <i class="fa fa-user-o"></i>
+      </button>
+      <% include login.ejs %>
       </ul>
     </div>
 </nav>

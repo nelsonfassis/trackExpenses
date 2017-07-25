@@ -4,11 +4,27 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mysql = require('mysql');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+var database = 'trackexpenses';
+var table = 'users';
+var client = mysql.createConnection({
+  user: 'root',
+  password: 'password',
+  host: '192.168.150.129',
+  port: 3306
+})
+client.query(
+  'USE '+database
+);
+client.query(
+  'insert into '+table+ ' (first_name, last_name, email, password) values (\'Nelson\', \'Assis\', \'nelson@email.com\', \'password\')'
+);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
