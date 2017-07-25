@@ -17,7 +17,7 @@ body {
 .contact-text{
   font-size: 20px;
   padding: 20px 35px 20px 35px;
-  font-family: 'Pavanam', cursive; sans-serif;
+  font-family: 'Zilla Slab', serif;
 }
 .contact-text p{
   margin-bottom: 30px;
@@ -87,12 +87,12 @@ div .portifolio{
 }
 
 h2, h3{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Zilla Slab', serif;
 }
 
 .intro-text{
 padding: 50px 0px 50px 50px;
-font-family: 'Press Start 2P', cursive;
+font-family: 'Zilla Slab', serif;
 }
 .intro h2{
   float: left;
@@ -130,9 +130,12 @@ position: relative;
 
 .navbar{
     background-color: black;
+    padding-top: 15px;
   }
 .navbar ul{
     list-style: none;
+    display: inline-flex;
+    float: right;
     padding: 0;
   }
 .navbar ul li{
@@ -151,13 +154,19 @@ position: relative;
     text-decoration:none;
     color:#aaa;
 }
+.navbar p {
+  font-size: 24px;
+  text-align: left;
+  padding: 15px;
+  display: inline-flex;
+}
 
 .footer{
   background: #ddc;
   text-align: center;
   font-size: 19px;
   padding-left: 15px;
-  font-family: "Press Start 2P";
+  font-family: 'Zilla Slab', serif;
 }
 .social{
 float: left;
@@ -178,7 +187,7 @@ section, .footer-rights{
   text-align: center;
   font-size: 19px;
   padding-left: 15px;
-  font-family: "Press Start 2P";
+  font-family: 'Zilla Slab', serif;
   padding-top: 5px;
 }
 
