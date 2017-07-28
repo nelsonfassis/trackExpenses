@@ -1,5 +1,5 @@
 /* Bordered form */
-form {
+form .modal-content {
     border: 3px solid #f1f1f1;
 }
 
@@ -49,7 +49,7 @@ img.avatar {
 }
 
 /* Add padding to containers */
-.container {
+form .container {
     padding: 16px;
 }
 
