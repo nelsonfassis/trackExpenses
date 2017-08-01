@@ -4,16 +4,20 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var dotenv = require('dotenv');
+
+
 var expressValidator = require('express-validator');
 
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var registration = require('./routes/registration');
-require('dotenv').config();
-var app = express();
 
+require('dotenv').config();
+
+var dotenv = require('dotenv');
+
+var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
