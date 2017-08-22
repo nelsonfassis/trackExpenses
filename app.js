@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 
 var expressValidator = require('express-validator');
 
+// Authentication Packages
+var session = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -31,6 +33,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(expressValidator());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'qwf564w1tresn56dyt',
+  resave: false,
+  saveUninitialized: false,
+  // cookie: { secure: true }
+}))
 
 app.use('/', index);
 app.use('/registration', registration);

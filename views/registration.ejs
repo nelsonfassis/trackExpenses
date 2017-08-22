@@ -14,9 +14,7 @@
   <h1><%= title %></h1>
 <% if (typeof errors == 'object' && errors) { %>
   <% errors.forEach(elem => { %>
-    <div class="alert alert-danger">
-      <%= elem.msg %>
-    </div>
+    <div class="alert alert-danger"><%= elem.msg %></div>
   <% }); %>
 <% } %>
 
